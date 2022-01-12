@@ -1,5 +1,7 @@
 package com.example.shoppinglist.domain
 
+import androidx.lifecycle.LiveData
+
 /**
  * Для реализации domain UseCase
  */
@@ -9,5 +11,5 @@ interface ShopListRepository {
     fun deleteShopItem(shopItem: ShopItem)
     fun editShopList(shopItem: ShopItem)
     fun getShopItem(shopItemId: Int): ShopItem
-    fun getShopLIst(): List<ShopItem>
+    fun getShopLIst(): LiveData<List<ShopItem>>
 }
