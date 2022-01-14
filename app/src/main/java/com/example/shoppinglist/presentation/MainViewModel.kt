@@ -1,5 +1,6 @@
 package com.example.shoppinglist.presentation
 
+import android.util.Log
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import com.example.shoppinglist.data.ShopListRepositoryImpl
@@ -27,4 +28,5 @@ class MainViewModel: ViewModel() {
         val newItem = shopItem.copy(enable = !shopItem.enable)
         editShopItemUseCase.editShopList(newItem)
     }
+
 }
