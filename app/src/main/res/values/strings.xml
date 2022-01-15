@@ -1,4 +1,9 @@
 <resources>
-    <string name="app_name">ShoppingList</string>
-    <string name="add_new_shop_item">Add new shop item</string>
+    <string name="app_name">Список покупок</string>
+    <string name="add_new_shop_item">Добавить к списку</string>
+    <string name="count">Количество</string>
+    <string name="save">Сохранить</string>
+    <string name="name">Имя</string>
+    <string name="error_input_count">Введите количество</string>
+    <string name="error_input_name">Введите имя</string>
 </resources>
