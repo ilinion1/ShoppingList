@@ -1,13 +1,14 @@
 package com.example.shoppinglist.domain
 
 import androidx.lifecycle.LiveData
+import javax.inject.Inject
 
 /**
  * Получаю список элементов
  */
-class GetShopListUseCase(private val shopListRepository: ShopListRepository) {
+class GetShopListUseCase @Inject constructor(private val shopListRepository: ShopListRepository) {
 
-    fun getShopLIst(): LiveData<List<ShopItem>>{
+    fun getShopList(): LiveData<List<ShopItem>>{
         return shopListRepository.getShopLIst()
     }
 }
